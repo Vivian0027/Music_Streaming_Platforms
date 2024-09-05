@@ -13,6 +13,10 @@
         cursor: pointer;
     }
 
+    .navbar-nav li {
+        font-family: Montserrat, 'Open Sans', Inter, sans-serif !important;
+    }
+
     #notification {
         position: relative;
     }

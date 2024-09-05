@@ -95,7 +95,7 @@ input {
 /* HOVER */
 
 .refer:hover {
-  font-weight: 600;
+  /* font-weight: 600; */
   color: var(--orange-color) !important;
   cursor: pointer;
 }

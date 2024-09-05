@@ -28,6 +28,7 @@ const recentSongs = $('.recentSongs')
 const optionWaiting = $('.option-waiting')
 const optionRecent = $('.option-recent')
 const rightSideControl = $('.control-right-side')
+const rightSideControlClean = $('.control-right-side-clean')
 const LOCAL_STORAGE_VARIABLE_NAME = 'Music Streaming Platforms'
 const changeTheme = $('.change_theme')
 const changeThemeClean = $('.change_theme-clean')
@@ -101,7 +102,7 @@ const app = {
                 this.currentIndex = this.currentIndexWaiting
                 this.songs = this.listPlaying
             }
-            if(this.currentIndex == -1) this.currentIndex = 0
+            if(this.currentIndex == -1 || this.currentIndex == this.songs.length) this.currentIndex = 0
         }
     },
 
@@ -218,19 +219,21 @@ const app = {
     },
 
     nextSong: function () {
-        this.currentIndex++;
+        const oldIndex = this.currentIndex
+        this.currentIndex++
         if (this.currentIndex == this.songs.length) this.currentIndex = 0
         this.isPlaying = true
-        this.SwapActiveSong(this.currentIndex - 1, this.currentIndex)
+        this.SwapActiveSong(oldIndex, this.currentIndex)
         this.loadCurrentSongOnAudioControl()
         audio.play()
     },
 
     previousSong: function () {
-        this.currentIndex--;
+        const oldIndex = this.currentIndex
+        this.currentIndex--
         if (this.currentIndex == -1) this.currentIndex = this.songs.length - 1
         this.isPlaying = true
-        this.SwapActiveSong(this.currentIndex + 1, this.currentIndex)
+        this.SwapActiveSong(oldIndex, this.currentIndex)
         this.loadCurrentSongOnAudioControl()
         audio.play()
     },
@@ -509,6 +512,9 @@ const app = {
         rightSideControl.onclick = () => {
             $('.right-side').classList.toggle('right-side-appear')
         }
+        rightSideControlClean.onclick = () => {
+            $('.right-side').classList.toggle('right-side-appear')
+        }
 
         // XỬ LÝ THEME
 
@@ -526,10 +532,8 @@ const app = {
     },
 
     init: function () {
-        this.songs = this.listPlaying
-        this.currentIndex = this.currentIndexWaiting
-        this.defineProperties()
         this.loadConfig()
+        this.defineProperties()
         this.renderListSong()
         this.loadCurrentSongOnAudioControl()
         this.handleEvent()

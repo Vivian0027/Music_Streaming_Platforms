@@ -231,7 +231,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="btn dropdown-item">
+                            <div class="btn dropdown-item control-right-side-clean">
                                 <i class="fa-solid fa-list refer"></i>
                             </div>
                         </li>
