@@ -45,10 +45,16 @@
 
         .card {
             border: none;
+            position: relative;
         }
 
         .card_song-img {
             transition: transform 0.4s ease-in-out;
+        }
+
+        .card-song:hover {
+            border-radius: 8px;
+            background-color: var(--dark_grey-color) !important;
         }
 
         .card-song:hover .card_song-img {
@@ -98,7 +104,7 @@
             <div class="col-2 bg-black-primary">
             </div>
 
-            <div class="col-10 content">
+            <div class="col-10 content p-4 pt-0">
 
                 <!-- CAROUSEL -->
                 <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -1368,8 +1374,7 @@
     <script src="../../public/js/application.js"></script>
 
     <script>
-        const dataPlayListSongs = [
-            {
+        const dataPlayListSongs = [{
                 name: 'Gác lại âu lo',
                 singer: 'Da LAB, Miu Lê',
                 path: '../../public/music/basic/vpop/GacLaiAuLo-DaLAB,MiuLe.mp3',
@@ -1437,8 +1442,7 @@
             }
         ]
 
-        const dataRecentSongs = [
-        {
+        const dataRecentSongs = [{
                 name: 'Hoa Cỏ Lau',
                 singer: 'Phong Max',
                 path: '../../public/music/basic/vpop/HoaCoLau-PhongMax.mp3',
@@ -1557,7 +1561,6 @@
         app.setDataSongs(dataPlayListSongs)
         app.setDataRecentSongs(dataRecentSongs)
         app.init()
-
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -57,8 +57,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-2 col-sm-2 pt-1 pb-1 ps-5">
-                    <img id="logo" src="../../public/images/other/symphony-darktheme-icon.png" alt="logo"
-                        style="width: 80%; min-width: 120px;">
+                    <a href="">
+                        <img id="logo" src="../../public/images/other/symphony-darktheme-icon.png" alt="logo"
+                            style="width: 80%; min-width: 120px;">
+                    </a>
                 </div>
                 <div class="col-6 col-sm-6 ps-5">
                     <form class="d-flex" role="search">

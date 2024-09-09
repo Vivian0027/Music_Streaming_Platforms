@@ -1,6 +1,10 @@
 <style>
     /* LEFT SIDE */
 
+    .left-side {
+        z-index: 10;
+    }
+
     .left-side-item.active,
     .left-side-item:hover {
         background-color: var(--dark_grey-color) !important;
@@ -53,12 +57,29 @@
             padding: 0 0 0 30px !important;
         }
 
+        .left-side-item.active,
         .left-side-item:hover {
+            background-color: var(--dark_grey-color) !important;
+            border-radius: 0;
+            box-shadow: inset 5px 0 5px var(--orange-color);
+            font-weight: 600;
+
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+
+        .left-side-item.active,
+        .left-side-item:hover,
+        .left-side-item:active {
             background-color: var(--black-color) !important;
+            border-radius: 0;
             box-shadow: none;
             font-weight: 600;
-            border: 1px solid var(--orange-color);
+
         }
+
+
     }
 </style>
 

@@ -21,6 +21,7 @@
 
 html {
   background-color: var(--white-color);
+  color: var(--text_dark_theme-color) !important;
 }
 
 input {

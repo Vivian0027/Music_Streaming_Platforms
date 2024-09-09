@@ -76,7 +76,7 @@ const app = {
     },
 
     loadConfig: function () {
-        if(this.config !== null) {
+        if (this.config !== null) {
             audio.volume = this.config.audioVolume
             audio.currentTime = this.config.audioProgress
             this.isRepeat = this.config.isRepeat
@@ -84,17 +84,17 @@ const app = {
             this.isRecentSong = this.config.isRecentSong
             this.currentIndexRecent = this.config.currentIndexRecent
             this.currentIndexWaiting = this.config.currentIndexWaiting
-    
-            if(this.isRandom) btnRandom.classList.toggle('audioActive')
-            if(this.isRepeat) btnRepeat.classList.toggle('audioActive')
-    
+
+            if (this.isRandom) btnRandom.classList.toggle('audioActive')
+            if (this.isRepeat) btnRepeat.classList.toggle('audioActive')
+
             inputVolume.value = audio.volume * 100
             inputVolumeClean.value = audio.volume * 100
-    
+
             this.runAfterInput(progressVolume, inputVolume)
             this.runAfterInput(progressVolumeClean, inputVolumeClean)
-    
-            if(this.isRecentSong) {
+
+            if (this.isRecentSong) {
                 this.currentIndex = this.currentIndexRecent
                 this.songs = this.recentListSongs
             }
@@ -102,7 +102,7 @@ const app = {
                 this.currentIndex = this.currentIndexWaiting
                 this.songs = this.listPlaying
             }
-            if(this.currentIndex == -1 || this.currentIndex == this.songs.length) this.currentIndex = 0
+            if (this.currentIndex == -1 || this.currentIndex == this.songs.length) this.currentIndex = 0
         }
     },
 
@@ -172,7 +172,7 @@ const app = {
         let list
         (this.isRecentSong) ? list = recentSongs : list = playlist
         const active = list.querySelector('li.active')
-        if(active) active.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        if (active) active.scrollIntoView({ behavior: 'smooth', block: 'start' })
     },
 
     loadCurrentSongOnAudioControl: function () {
@@ -275,19 +275,19 @@ const app = {
     },
 
     ActiveSongBySelect: function (e) {
-        if(e.target.closest('.song')) {
-        if (this.currentIndex != -1) {
-            const oldIndex = this.currentIndex
-            const oldSelectedSong = e.currentTarget.querySelector(`[data-index="${oldIndex}"]`)
-            oldSelectedSong.classList.remove('active')
-        }
+        if (e.target.closest('.song')) {
+            if (this.currentIndex != -1) {
+                const oldIndex = this.currentIndex
+                const oldSelectedSong = e.currentTarget.querySelector(`[data-index="${oldIndex}"]`)
+                oldSelectedSong.classList.remove('active')
+            }
 
-        const newIndex = e.target.closest('.container-song').dataset.index
-        const newSelectedSong = e.currentTarget.querySelector(`[data-index="${newIndex}"]`)
-        newSelectedSong.classList.add('active')
+            const newIndex = e.target.closest('.container-song').dataset.index
+            const newSelectedSong = e.currentTarget.querySelector(`[data-index="${newIndex}"]`)
+            newSelectedSong.classList.add('active')
 
-        return newIndex
-    } else return null
+            return newIndex
+        } else return null
     },
 
     IconVolumeStatusControl: function () {
@@ -502,11 +502,11 @@ const app = {
         playlist.onclick = (e) => {
             const newIndex = this.ActiveSongBySelect(e)
 
-            if(newIndex !== null) this.playSelectSong(newIndex)
+            if (newIndex !== null) this.playSelectSong(newIndex)
         }
         recentSongs.onclick = (e) => {
             const newIndex = this.ActiveSongBySelect(e)
-            if(newIndex !== null) this.playSelectSong(newIndex)
+            if (newIndex !== null) this.playSelectSong(newIndex)
         }
 
         rightSideControl.onclick = () => {
@@ -527,7 +527,7 @@ const app = {
             this.saveConfig()
         }
 
-        if(this.isRecentSong) optionRecent.click()
+        if (this.isRecentSong) optionRecent.click()
 
     },
 

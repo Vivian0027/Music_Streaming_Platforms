@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +25,7 @@
 
     <style>
         * {
-            color: var( --white-color) !important;
+            color: var(--white-color) !important;
         }
 
         body {
@@ -62,24 +63,25 @@
         button {
             background: linear-gradient(to right, var(--orange-color), var(--pink_strong-color));
         }
-        
+
         @media screen and (max-width: 576px) {
             #form-login-container {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 48px 24px;
-            width: 100%;
-            border-radius: 12px;
-            border: 1px solid var(--pink_strong-color);
-            box-shadow: 0 0 25px var(--pink_strong-color);
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 48px 24px;
+                width: 100%;
+                border-radius: 12px;
+                border: 1px solid var(--pink_strong-color);
+                box-shadow: 0 0 25px var(--pink_strong-color);
 
-            .form-check {
-                display: flex;
-                flex-direction: column;
+                .form-check {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
-        }
         }
     </style>
 </head>
+
 <body>
     <div id="form-login-container">
         <h2 class="text-center">Đăng nhập</h2>
@@ -87,23 +89,24 @@
             <div class="mb-3 input-container mt-5 d-flex align-self-center justify-content-between">
                 <input type="text" class="form-control no-outline shadow-none rounded-0 ps-0" autocomplete="off" id="username" placeholder="Tên đăng nhập" name="username" required>
                 <i class="fa-solid fa-user lh-lg"></i>
-              </div>
-              <div class="mb-3 input-container d-flex align-self-center justify-content-between">
+            </div>
+            <div class="mb-3 input-container d-flex align-self-center justify-content-between">
                 <input type="password" class="form-control no-outline shadow-none rounded-0 ps-0" id="pwd" placeholder="Nhập mật khẩu" name="pswd" required>
                 <i class="fa-solid fa-lock lh-lg"></i>
             </div>
-              <div class="form-check mb-3 d-flex justify-content-between">
+            <div class="form-check mb-3 d-flex justify-content-between">
                 <label class="form-check-label mb-2">
-                  <input class="form-check-input no-outline shadow-none" type="checkbox" name="remember"> Remember me
+                    <input class="form-check-input no-outline shadow-none" type="checkbox" name="remember"> Remember me
                 </label>
                 <a href="" class="text-decoration-none text-orange-primary">Bạn quên mật khẩu?</a>
-              </div>
-              <button type="submit" class="btn w-100">Đăng nhập</button>
-              <div class="text-center mt-3">
+            </div>
+            <button type="submit" class="btn w-100">Đăng nhập</button>
+            <div class="text-center mt-3">
                 <span>Bạn chưa có tài khoản?</span>
                 <a href="register.php" class="text-decoration-none text-orange-primary">Đăng ký</a>
-              </div>
+            </div>
         </form>
     </div>
 </body>
+
 </html>
