@@ -10,6 +10,7 @@
         width: 330px;
         right: -330px;
         transition: right 0.5s ease-in-out;
+        border: 1px solid var(--orange-color);
     }
 
     .right-side .container-song {

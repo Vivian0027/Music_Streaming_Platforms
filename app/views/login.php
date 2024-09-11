@@ -84,14 +84,18 @@
 
 <body>
     <div id="form-login-container">
-        <h2 class="text-center">Đăng nhập</h2>
+        <div class="d-flex justify-content-center">
+            <img src="../../public/images/other/symphony-darktheme-icon.png" alt="logo" class="w-50">
+        </div>
         <form action="">
             <div class="mb-3 input-container mt-5 d-flex align-self-center justify-content-between">
-                <input type="text" class="form-control no-outline shadow-none rounded-0 ps-0" autocomplete="off" id="username" placeholder="Tên đăng nhập" name="username" required>
+                <input type="text" class="form-control no-outline shadow-none rounded-0 ps-0" autocomplete="off"
+                    id="username" placeholder="Tên đăng nhập" name="username" required>
                 <i class="fa-solid fa-user lh-lg"></i>
             </div>
             <div class="mb-3 input-container d-flex align-self-center justify-content-between">
-                <input type="password" class="form-control no-outline shadow-none rounded-0 ps-0" id="pwd" placeholder="Nhập mật khẩu" name="pswd" required>
+                <input type="password" class="form-control no-outline shadow-none rounded-0 ps-0" id="pwd"
+                    placeholder="Nhập mật khẩu" name="pswd" required>
                 <i class="fa-solid fa-lock lh-lg"></i>
             </div>
             <div class="form-check mb-3 d-flex justify-content-between">

@@ -109,6 +109,9 @@
             z-index: 5000;
         }
 
+        #menu-audio i {
+            font-size: 14px;
+        }
     }
 </style>
 
@@ -117,7 +120,7 @@
 <section>
     <div id="menu-audio" class="fixed-bottom row">
         <!-- LEFT MENU CONTROL -->
-        <div class="col-1 col-lg-3 menu-left-audio">
+        <div class="col-12 col-sm-1 col-lg-3 menu-left-audio">
             <div id="music_playing_info" class="row">
 
             </div>
@@ -125,7 +128,7 @@
 
         <!-- MAIN MENU CONTROL -->
 
-        <div class="col-10 col-lg-6 menu-control-audio">
+        <div class="col-11 col-sm-10 col-lg-6 menu-control-audio">
             <div class="row">
                 <!-- TOP MENU AUDIO CONTROL -->
                 <div class="col-3"></div>

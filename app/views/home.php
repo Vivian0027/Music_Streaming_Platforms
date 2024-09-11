@@ -39,10 +39,6 @@
             height: 360px;
         }
 
-        .card-song {
-            overflow: hidden;
-        }
-
         .card {
             border: none;
             position: relative;
@@ -66,8 +62,60 @@
             background-color: var(--dark_grey-color);
         }
 
+        .card-song:hover .card-hover-song {
+            display: block;
+        }
+
         .clean-audio-control {
             display: none;
+        }
+
+        .card-img-container {
+            position: relative;
+        }
+
+        .card-hover-song {
+            position: absolute;
+            width: 25%;
+            height: 25%;
+            bottom: 10%;
+            right: 10%;
+            max-width: 50px;
+            max-height: 50px;
+            min-width: 30px;
+            min-height: 30px;
+            background-color: var(--orange-color);
+            color: var(--black-color);
+            display: none;
+        }
+
+        .vip {
+            position: absolute;
+            top: 0;
+            left: -8px;
+            width: 50px;
+            height: 22px;
+            background-color: var(--yellow-color);
+            border-radius: 4px 0 0 0;
+            color: var(--white-color);
+            border-top-left-radius: 10px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 3px 0;
+            font-family: Montserrat, 'Open Sans', Inter, sans-serif !important;
+            font-weight: 600;
+        }
+
+        .vip::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 8px solid var(--yellow-color);
+            border-left: 8px solid transparent;
+            top: 22px;
+            left: 0;
+            filter: brightness(80%);
         }
 
         @media screen and (max-width: 992px) {
@@ -149,112 +197,124 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/playlist/chill.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/playlist/chill.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Ở đây có nhạc chill</h6>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Ở đây có nhạc chill</h6>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/playlist/top10hitthemaskedsingervietnam.png"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/playlist/top10hitthemaskedsingervietnam.png"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">10 bài hát hay nhất The Masked
-                                        Singer VietNam mùa 2</h6>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">10 bài hát hay nhất The Masked
+                                            Singer VietNam mùa 2</h6>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/playlist/topvpop2018.webp" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/playlist/topvpop2018.webp" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Top V-POP nửa năm 2018</h6>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Top V-POP nửa năm 2018</h6>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/playlist/remixhottiktok.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/playlist/remixhottiktok.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Những bản remix hot Tik Tok</h6>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Những bản remix hot Tik Tok</h6>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/playlist/vpophit.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/playlist/vpophit.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Nhạc V-POP hit làm nên tên tuổi
-                                        nghệ sĩ</h6>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Nhạc V-POP hit làm nên tên tuổi
+                                            nghệ sĩ</h6>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/playlist/haynhatcuabigdaddy.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/playlist/haynhatcuabigdaddy.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Những bài hát hay nhất cảu BigDaddy
-                                    </h6>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Những bài hát hay nhất cảu BigDaddy
+                                        </h6>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -412,119 +472,131 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/boconganh-phongmax.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/boconganh-phongmax.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Bồ Công Anh</h6>
-                                    <p class="card-text card-song-singer text-support">Phong Max</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Bồ Công Anh</h6>
+                                        <p class="card-text card-song-singer text-support">Phong Max</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/bentrentanglau-tangduytan.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/bentrentanglau-tangduytan.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Bên Trên Tầng Lầu</h6>
-                                    <p class="card-text card-song-singer text-support">Tăng Duy Tân</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Bên Trên Tầng Lầu</h6>
+                                        <p class="card-text card-song-singer text-support">Tăng Duy Tân</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/caooc20-bray,datg,masew,k-icm.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
-                                    </div>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/caooc20-bray,datg,masew,k-icm.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
 
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Cao Ốc 20</h6>
-                                    <p class="card-text card-song-singer text-support">B Ray, Đạt G</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Cao Ốc 20</h6>
+                                        <p class="card-text card-song-singer text-support">B Ray, Đạt G</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/daloyeuemnhieu-justatee.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/daloyeuemnhieu-justatee.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Đã Lỡ Yêu Em Nhiều</h6>
-                                    <p class="card-text card-song-singer text-support">JustaTee</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Đã Lỡ Yêu Em Nhiều</h6>
+                                        <p class="card-text card-song-singer text-support">JustaTee</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/muonruoutotinh-emily,bigdaddy.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/muonruoutotinh-emily,bigdaddy.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Mượn Rượu Tỏ Tình</h6>
+                                        <p class="card-text card-song-singer text-support">Emily, BigDaddy</p>
                                     </div>
 
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Mượn Rượu Tỏ Tình</h6>
-                                    <p class="card-text card-song-singer text-support">Emily, BigDaddy</p>
-                                </div>
-
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/tuyam-xesi,masew,nhatnguyen.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/tuyam-xesi,masew,nhatnguyen.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Túy Âm</h6>
-                                    <p class="card-text card-song-singer text-support">Xesi, Masew, Nhật Nguyễn</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Túy Âm</h6>
+                                        <p class="card-text card-song-singer text-support">Xesi, Masew, Nhật Nguyễn</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -538,116 +610,127 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 overflow-hidden rounded-3">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/thienlyoi-jack-j97.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 overflow-hidden rounded-3">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/thienlyoi-jack-j97.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Thiên Lý Ơi</h6>
-                                    <p class="card-text card-song-singer text-support">Jack-J97</p>
-                                </div>
-                                <div class="vip">VIP</div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                            <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/sonthuytrungmay-anhrong,jena.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Sơn Thủy Trùng Mây</h6>
-                                    <p class="card-text card-song-singer text-support">Jena, Anh Rồng</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                            <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/gaclaiaulo-dalab,miule.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
-                                    </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Gác Lại Âu Lo</h6>
-                                    <p class="card-text card-song-singer text-support">Da LAB, Miu Lê</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                            <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/chanai-orange,khoi.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Thiên Lý Ơi</h6>
+                                        <p class="card-text card-song-singer text-support">Jack-J97</p>
                                     </div>
                                     <div class="vip">VIP</div>
+                            </div>
+                            </a>
+                        </div>
 
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Chân Ái</h6>
-                                    <p class="card-text card-song-singer text-support">Orange, Khói</p>
-                                </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                            <div class="card card-song" data-index="" style="background-color: var(--black-color);">
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/sonthuytrungmay-anhrong,jena.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Sơn Thủy Trùng Mây</h6>
+                                        <p class="card-text card-song-singer text-support">Jena, Anh Rồng</p>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                            <div class="card card-song" data-index="" style="background-color: var(--black-color);">
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/gaclaiaulo-dalab,miule.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Gác Lại Âu Lo</h6>
+                                        <p class="card-text card-song-singer text-support">Da LAB, Miu Lê</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/emlaai-keyo.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/chanai-orange,khoi.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Em Là Ai?</h6>
-                                    <p class="card-text card-song-singer text-support">Keyo</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Chân Ái</h6>
+                                        <p class="card-text card-song-singer text-support">Orange, Khói</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/hanhlangcu-longnonla,masew.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/emlaai-keyo.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Em Là Ai?</h6>
+                                        <p class="card-text card-song-singer text-support">Keyo</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                            <div class="card card-song" data-index="" style="background-color: var(--black-color);">
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/hanhlangcu-longnonla,masew.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
 
 
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Hành Lang Cũ</h6>
-                                    <p class="card-text card-song-singer text-support">Long Nón Lá, Masew</p>
-                                </div>
+                                    </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Hành Lang Cũ</h6>
+                                        <p class="card-text card-song-singer text-support">Long Nón Lá, Masew</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -661,121 +744,133 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/haytraochoanh-sontungm-tp,snoopdogg.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/haytraochoanh-sontungm-tp,snoopdogg.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Hãy Trao Cho Anh</h6>
-                                    <p class="card-text card-song-singer text-support">Sơn Tùng M-TP, Snoop Doggs</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Hãy Trao Cho Anh</h6>
+                                        <p class="card-text card-song-singer text-support">Sơn Tùng M-TP, Snoop Doggs</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/noinaycoanh-sontungm-tp.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/noinaycoanh-sontungm-tp.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Nơi Này Có Anh</h6>
-                                    <p class="card-text card-song-singer text-support">Sơn Tùng M-TP</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Nơi Này Có Anh</h6>
+                                        <p class="card-text card-song-singer text-support">Sơn Tùng M-TP</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/nguoiamphu-osad,vrt.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/nguoiamphu-osad,vrt.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Người Âm Phủ</h6>
-                                    <p class="card-text card-song-singer text-support">Osad, VRT</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Người Âm Phủ</h6>
+                                        <p class="card-text card-song-singer text-support">Osad, VRT</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/cunganh-ngocdolil,,hagii,stee.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/cunganh-ngocdolil,,hagii,stee.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Cùng Anh</h6>
-                                    <p class="card-text card-song-singer text-support">Ngọc Dolil, Hagii, STee</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Cùng Anh</h6>
+                                        <p class="card-text card-song-singer text-support">Ngọc Dolil, Hagii, STee</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/yeulathathu-onlyc.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/yeulathathu-onlyc.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Yêu Là Tha Thứ (OST Em Chưa 18)
-                                    </h6>
-                                    <p class="card-text card-song-singer text-support">Only C</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Yêu Là Tha Thứ (OST Em Chưa 18)
+                                        </h6>
+                                        <p class="card-text card-song-singer text-support">Only C</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/bentrentanglau-tangduytan.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/bentrentanglau-tangduytan.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Bên Trên Tầng Lầu</h6>
-                                    <p class="card-text card-song-singer text-support">Tăng Duy Tân</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Bên Trên Tầng Lầu</h6>
+                                        <p class="card-text card-song-singer text-support">Tăng Duy Tân</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
                             </div>
                         </div>
                     </div>
@@ -789,119 +884,131 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/thanhxuan-dalab.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/thanhxuan-dalab.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Thanh Xuân</h6>
-                                    <p class="card-text card-song-singer text-support">Da LAB</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Thanh Xuân</h6>
+                                        <p class="card-text card-song-singer text-support">Da LAB</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/gaclaiaulo-dalab,miule.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/gaclaiaulo-dalab,miule.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Gác Lại Âu Lo</h6>
-                                    <p class="card-text card-song-singer text-support">Da LAB, Miu Lê</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Gác Lại Âu Lo</h6>
+                                        <p class="card-text card-song-singer text-support">Da LAB, Miu Lê</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/cafekhongduong-jombie,tkan,bean.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/cafekhongduong-jombie,tkan,bean.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Cùng Anh</h6>
-                                    <p class="card-text card-song-singer text-support">Ngọc Dolil, Hagii, STee</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Cùng Anh</h6>
+                                        <p class="card-text card-song-singer text-support">Ngọc Dolil, Hagii, STee</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/coemcho-min,mra.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/coemcho-min,mra.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Có Em Chờ</h6>
-                                    <p class="card-text card-song-singer text-support">Min, Mr.A</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Có Em Chờ</h6>
+                                        <p class="card-text card-song-singer text-support">Min, Mr.A</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/noinaycoanh-sontungm-tp.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/noinaycoanh-sontungm-tp.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Nơi Này Có Anh</h6>
-                                    <p class="card-text card-song-singer text-support">Sơn Tùng M-TP</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Nơi Này Có Anh</h6>
+                                        <p class="card-text card-song-singer text-support">Sơn Tùng M-TP</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/vpop/thangtulaloinoidoicuaem-haanhtuan.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/vpop/thangtulaloinoidoicuaem-haanhtuan.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Tháng Tư Là Lời Nói Dối Của Em</h6>
-                                    <p class="card-text card-song-singer text-support">Hà Anh Tuấn</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Tháng Tư Là Lời Nói Dối Của Em</h6>
+                                        <p class="card-text card-song-singer text-support">Hà Anh Tuấn</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -915,121 +1022,133 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/remix/tuyetsac(remix)-thanhphong.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/remix/tuyetsac(remix)-thanhphong.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Tuyệt Sắc</h6>
-                                    <p class="card-text card-song-singer text-support">Thanh Phong remix</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Tuyệt Sắc</h6>
+                                        <p class="card-text card-song-singer text-support">Thanh Phong remix</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/remix/vokichcuaem(remix)-thereon,ntpvinahouse.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/remix/vokichcuaem(remix)-thereon,ntpvinahouse.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Vở Kịch Của Em</h6>
-                                    <p class="card-text card-song-singer text-support">Thereon remix, NTP Vinahouse</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Vở Kịch Của Em</h6>
+                                        <p class="card-text card-song-singer text-support">Thereon remix, NTP Vinahouse</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/remix/sonthuytrungmay(remix)-anhrong,jena,sinkra.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/remix/sonthuytrungmay(remix)-anhrong,jena,sinkra.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Sơn Thủy Trùng Mây</h6>
-                                    <p class="card-text card-song-singer text-support">Anh Rồng, Jena, SinKra remix</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Sơn Thủy Trùng Mây</h6>
+                                        <p class="card-text card-song-singer text-support">Anh Rồng, Jena, SinKra remix</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/remix/thithoi(remix)-tvk,nal.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/remix/thithoi(remix)-tvk,nal.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Thì Thôi</h6>
-                                    <p class="card-text card-song-singer text-support">TVK, Nal</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Thì Thôi</h6>
+                                        <p class="card-text card-song-singer text-support">TVK, Nal</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/remix/tinhtahainga(remix)-akikhoa,dori.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/remix/tinhtahainga(remix)-akikhoa,dori.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Tình Ta Hai Ngã</h6>
-                                    <p class="card-text card-song-singer text-support">Aki Khoa, Dori remix</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Tình Ta Hai Ngã</h6>
+                                        <p class="card-text card-song-singer text-support">Aki Khoa, Dori remix</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/remix/khuatloi(remix)-nb3hoaibao,h2oremix.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/remix/khuatloi(remix)-nb3hoaibao,h2oremix.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Khuất Lối</h6>
-                                    <p class="card-text card-song-singer text-support">NB3 Hoài Bảo, H2O remix</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Khuất Lối</h6>
+                                        <p class="card-text card-song-singer text-support">NB3 Hoài Bảo, H2O remix</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -1043,111 +1162,123 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/us-uk/nevada-cozizuehsdorff,vicetone.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/us-uk/nevada-cozizuehsdorff,vicetone.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Nevada</h6>
-                                    <p class="card-text card-song-singer text-support">Da LAB</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Nevada</h6>
+                                        <p class="card-text card-song-singer text-support">Da LAB</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/us-uk/faded-alanwalker.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/us-uk/faded-alanwalker.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Faded</h6>
-                                    <p class="card-text card-song-singer text-support">Alan Warker</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Faded</h6>
+                                        <p class="card-text card-song-singer text-support">Alan Warker</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/us-uk/shapeofyou-edsheeran.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/us-uk/shapeofyou-edsheeran.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Shape Of You</h6>
-                                    <p class="card-text card-song-singer text-support">Ed Sheeran</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Shape Of You</h6>
+                                        <p class="card-text card-song-singer text-support">Ed Sheeran</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/us-uk/waitingforlove-avicii.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/us-uk/waitingforlove-avicii.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Waiting for love</h6>
-                                    <p class="card-text card-song-singer text-support">Avicii</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Waiting for love</h6>
+                                        <p class="card-text card-song-singer text-support">Avicii</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/us-uk/youngandbeautiful-lanadelrey.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/us-uk/youngandbeautiful-lanadelrey.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Young And Beautiful</h6>
-                                    <p class="card-text card-song-singer text-support">Lana Del Rey</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Young And Beautiful</h6>
+                                        <p class="card-text card-song-singer text-support">Lana Del Rey</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/us-uk/cheapthrill-sia.jpg" alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/us-uk/cheapthrill-sia.jpg" alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Cheap Thrill</h6>
-                                    <p class="card-text card-song-singer text-support">Sia</p>
-                                </div>
-                                <div class="vip">VIP</div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Cheap Thrill</h6>
+                                        <p class="card-text card-song-singer text-support">Sia</p>
+                                    </div>
+                                    <div class="vip">VIP</div>
                             </div>
                         </div>
                     </div>
@@ -1161,118 +1292,131 @@
                         <a href="" class="text-decoration-none text-support fw-bolder refer">Tất cả
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
+                        </a>
                     </div>
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/nhactrutinh/chimtrangmocoi-camly,dantruong.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/nhactrutinh/chimtrangmocoi-camly,dantruong.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Chim Trắng Mồ Côi</h6>
-                                    <p class="card-text card-song-singer text-support">Cẩm Ly, Đan Trường</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Chim Trắng Mồ Côi</h6>
+                                        <p class="card-text card-song-singer text-support">Cẩm Ly, Đan Trường</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/nhactrutinh/hanhtrinhtrendatphussa-phinhung.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/nhactrutinh/hanhtrinhtrendatphussa-phinhung.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Hành Trình Trên Đát Phù Sa</h6>
-                                    <p class="card-text card-song-singer text-support">Phi Nhung</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Hành Trình Trên Đát Phù Sa</h6>
+                                        <p class="card-text card-song-singer text-support">Phi Nhung</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/nhactrutinh/dapvocaydan-quangle.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/nhactrutinh/dapvocaydan-quangle.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Đạp Vỡ Cây Đàn</h6>
-                                    <p class="card-text card-song-singer text-support">Quang Lê</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Đạp Vỡ Cây Đàn</h6>
+                                        <p class="card-text card-song-singer text-support">Quang Lê</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/nhactrutinh/vunglamebay-nhuquynh.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/nhactrutinh/vunglamebay-nhuquynh.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Vùng Lá Me Bay</h6>
-                                    <p class="card-text card-song-singer text-support">Như Quỳnh</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Vùng Lá Me Bay</h6>
+                                        <p class="card-text card-song-singer text-support">Như Quỳnh</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/nhactrutinh/vonguatrendoiconon-quocdai.jpg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/nhactrutinh/vonguatrendoiconon-quocdai.jpg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Vó Ngựa Trên Đồi Cỏ Non</h6>
-                                    <p class="card-text card-song-singer text-support">Quốc Đại</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Vó Ngựa Trên Đồi Cỏ Non</h6>
+                                        <p class="card-text card-song-singer text-support">Quốc Đại</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                             <div class="card card-song" data-index="" style="background-color: var(--black-color);">
-                                <div class="card-img-container overflow-hidden rounded-3 ">
-                                    <img class="card-img-top card_song-img rounded-3"
-                                        src="../../public/images/music/nhactrutinh/sautimmthiephong-lequyen,quangle.jpeg"
-                                        alt="Card image">
-                                    <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
-                                        <i class="fas fa-play icon-play"></i>
+                                <a href="song.php" class="text-decoration-none">
+                                    <div class="card-img-container overflow-hidden rounded-3 ">
+                                        <img class="card-img-top card_song-img rounded-3"
+                                            src="../../public/images/music/nhactrutinh/sautimmthiephong-lequyen,quangle.jpeg"
+                                            alt="Card image">
+                                        <div class="card-hover-song rounded-circle text-center fs-5 lh-lg">
+                                            <i class="fas fa-play icon-play"></i>
+                                        </div>
+
+
                                     </div>
-
-
-                                </div>
-                                <div class="card-body ps-0 pe-0">
-                                    <h6 class="card-title card-song-name refer"
-                                        style="color: var(--text_dark_theme-color);">Sầu Tím Thiệp Hồng</h6>
-                                    <p class="card-text card-song-singer text-support">Lệ quyên, Quang Lê</p>
-                                </div>
+                                    <div class="card-body ps-0 pe-0">
+                                        <h6 class="card-title card-song-name refer"
+                                            style="color: var(--text_dark_theme-color);">Sầu Tím Thiệp Hồng</h6>
+                                        <p class="card-text card-song-singer text-support">Lệ quyên, Quang Lê</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1284,77 +1428,77 @@
                     <h5 class="text-white-primary">ĐỐI TÁC ÂM NHẠC</h5>
                     <div class="row p-5 pt-0">
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/monstercat.jpg" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/monstercat.jpg" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/sony-music.png" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/sony-music.png" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/the-orchard.jpg" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/the-orchard.jpg" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;" src="../../public/images/sponsor/emprire.png"
-                                    alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;" src="../../public/images/sponsor/emprire.png"
+                                alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/believe-entertainment.png" alt=""
-                                    class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/believe-entertainment.png" alt=""
+                                class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/dongtay-promotion.jpg" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/dongtay-promotion.jpg" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/danal-entertainment.png" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/danal-entertainment.png" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/mtp-entertainment.jpg" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/mtp-entertainment.jpg" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/universal_music.jpg" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/universal_music.jpg" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/sm-entertainment.jpg" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/sm-entertainment.jpg" alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;" src="../../public/images/sponsor/genie.png"
-                                    alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;" src="../../public/images/sponsor/genie.png"
+                                alt="" class="rounded-4">
+
                         </div>
                         <div class="col-12 col-sm-6 col-md-3 col-xl-2 mt-4">
-                            <a href="">
-                                <img style="width: 130px; height: 70px;"
-                                    src="../../public/images/sponsor/kakao-entertainment.png" alt="" class="rounded-4">
-                            </a>
+
+                            <img style="width: 130px; height: 70px;"
+                                src="../../public/images/sponsor/kakao-entertainment.png" alt="" class="rounded-4">
+
                         </div>
                     </div>
                 </div>

@@ -20,8 +20,9 @@
 }
 
 html {
-  background-color: var(--white-color);
+  background-color: var(--black-color) !important;
   color: var(--text_dark_theme-color) !important;
+  width: 100wh;
 }
 
 input {
